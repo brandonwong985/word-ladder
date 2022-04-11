@@ -3,7 +3,7 @@ Assignment for CPSC-3400 Languages and Computation at Seattle University.
 Practicing usage of Python data structures and dynamic programming.
 
 Word Ladder is a Python program that finds the shortest word ladder between a pair of words.
-*A word ladder puzzle begins with two words, and to solve the puzzle one must find a chain of other words to link the two, in which two adjacent words differ by one letter. from https://en.wikipedia.org/wiki/Word_ladder*
+*"A word ladder puzzle begins with two words, and to solve the puzzle one must find a chain of other words to link the two, in which two adjacent words differ by one letter." from https://en.wikipedia.org/wiki/Word_ladder*
 **main.py** uses input files: **words.txt** and **pairs.txt**
 * **words.txt** is a collection of words that **main.py** will work with to construct word ladders
 * **pairs.txt** is the collection of pairs of words that **main.py** will try to find word ladders between
