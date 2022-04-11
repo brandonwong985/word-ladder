@@ -13,17 +13,17 @@ Input file format:
 * **words.txt**: each word should be on its own line
 * **pairs.txt**: each word pair should be on its own line seperated by a space
 
-Example output when word ladder is found:
+Example output when a word ladder is found:
 ```
 ** Looking for ladder from cat to hot
 The ladder is: cat -> bat -> bot -> hot
 ```
-Example output when word ladder is not found:
+Example output when a word ladder is not found:
 ```
 ** Looking for ladder from abed to expo
 No ladder found from abed and expo
 ```
-Example output when pair is of different lengths:
+Example output when a pair is of different lengths:
 ```
 ** Looking for ladder from aces to clown
 aces and clown are not the same length
