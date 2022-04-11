@@ -1,5 +1,5 @@
 # word-ladder
-Assignment for CPSC-3400 Languages and Computation at Seattle University.
+Assignment for CPSC-3400 Languages and Computation at Seattle University.  
 Practicing usage of Python data structures and dynamic programming.
 
 Word Ladder is a Python program that finds the shortest word ladder between a pair of words.
@@ -14,7 +14,7 @@ Input file format:
 * **pairs.txt**: each word pair should be on its own line seperated by a space
 
 Example output when word ladder is found:
-```sh
+```
 ** Looking for ladder from cat to hot
 The ladder is: cat -> bat -> bot -> hot
 ```
