@@ -39,7 +39,7 @@ def main():
             q.append([startWord])
             ans = []
             visited = set()
-            # Continue the DFS until answer is found or queue becomes empty (no word list found)
+            # Continue the DFS until word ladder is found or queue becomes empty (no word ladder found)
             while q:
                 # Get first ladder in the queue
                 curr = q.popleft()
