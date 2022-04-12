@@ -48,9 +48,8 @@ def main():
                     word = curr[-1]
                     visited.add(word)
                     if word == endWord:
-                        if len(ans) == 0 or len(curr) < len(ans):
-                            ans = curr
-                            break
+                        ans = curr
+                        break
                     # If current word is not already in the adjacency list, find all the adjacent words for that word
                     elif word not in adjWords:
                         adjList = list()
