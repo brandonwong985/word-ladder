@@ -11,6 +11,17 @@ pairs_file = 'pairs.txt'
 max_word_length = 7
 
 
+# Function that returns a list of all adjacent words in the set
+def getAdjWordsList(word, wordList):
+    adjList = list()
+    for i in range(len(word)):
+        for c in range(ord('a'), ord('z') + 1):
+            new_word = word[:i] + chr(c) + word[i + 1:]
+            if new_word in wordList:
+                adjList.append(new_word)
+    return adjList
+
+
 def main():
     # Input files
     wordsFile = open(words_file, 'r')
@@ -50,16 +61,10 @@ def main():
                     if word == endWord:
                         ans = curr
                         break
-                    # If current word is not already in the adjacency list, find all the adjacent words for that word
+                    # If current word is not already in the adjacency list,
+                    # add the list of adjacent words to the dictionary
                     elif word not in adjWords:
-                        adjList = list()
-                        for j in range(len(word)):
-                            for c in range(ord('a'), ord('z') + 1):
-                                new_word = word[:j] + chr(c) + word[j + 1:]
-                                if new_word in wordList:
-                                    adjList.append(new_word)
-                        # Add the list of adjacent words to the dictionary
-                        adjWords[word] = adjList
+                        adjWords[word] = getAdjWordsList(word, wordList)
                     # From the dictionary, make new ladders using unvisited adjacent words
                     # and append to the end of the queue
                     for possibleWord in adjWords[word]:
