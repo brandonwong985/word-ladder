@@ -1,5 +1,4 @@
 # word-ladder
-Assignment for CPSC-3400 Languages and Computation at Seattle University.  
 Practicing usage of Python data structures (dict, set, deque, etc), BFS and dynamic programming.
 
 Word Ladder is a Python program that finds the shortest word ladder between pairs of words.
